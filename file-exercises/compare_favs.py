@@ -21,5 +21,16 @@ def compare_favs2(whitney_favs, gulmira_favs):
 		print "We both love", gulmira_favs[1]
 	elif gulmira_favs[2] in whitney_favs:
 		print "We both love", gulmira_favs[2]
-	print "Nothing is True"
+
 compare_favs2(whitney_favs, gulmira_favs)
+
+fav_foods = open("whitney_fav_foods.txt"), ("gulmira_fav_foods.txt")
+
+def read_files(file1):
+	foodfile = open(file1) 
+	favs = foodfile.readlines()	
+	foodfile.close()
+	print favs
+
+read_files("whitney_fav_foods.txt")
+read_files("gulmira_fav_foods.txt")
