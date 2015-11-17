@@ -11,3 +11,15 @@ def compare_favs(whitney_favs, gulmira_favs):
 		print "Our favorite foods are the same!"
 	print "Our foods are different"
 compare_favs(whitney_favs, gulmira_favs)
+
+
+
+def compare_favs2(whitney_favs, gulmira_favs):
+	if gulmira_favs[0] in whitney_favs:
+		print "We both love", gulmira_favs[0]
+	elif gulmira_favs[1] in whitney_favs:
+		print "We both love", gulmira_favs[1]
+	elif gulmira_favs[2] in whitney_favs:
+		print "We both love", gulmira_favs[2]
+	print "Nothing is True"
+compare_favs2(whitney_favs, gulmira_favs)
